@@ -373,6 +373,11 @@ const bills = [
   },
 ];
 
-// Start coding here
+function memberOnly(members) {
+  let result = [];
+   result = members.filter(members => members.member);
+return result;
+};
 
-const newBills;
+let newBills = memberOnly(bills);
+console.log(newBills);
